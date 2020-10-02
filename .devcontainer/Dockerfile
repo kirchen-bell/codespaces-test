@@ -3,7 +3,7 @@
 # [Choice] Node.js version: 14, 12, 10
 ARG VARIANT="14-buster"
 # FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
-FROM node:14-buster
+FROM node:${VARIANT}
 RUN apt-get update && apt-get install git
 
 # [Optional] Uncomment this section to install additional OS packages.
